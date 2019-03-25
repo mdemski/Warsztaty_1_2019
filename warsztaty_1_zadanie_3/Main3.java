@@ -13,18 +13,18 @@ public class Main3 {
         while ((guess != a)) {
             count++;
             System.out.println("Zgaduję: " + guess);
-            System.out.println("Zgadłem?");
+            System.out.print("Zgadłem?");
             String ans1 = scanner.nextLine();
             if (ans1.equals("tak")) {
                 break;
             }
             if (ans1.equals("nie")) {
-                System.out.println("Za dużo?");
+                System.out.print("Za dużo?");
                 String ans2 = scanner.nextLine();
                 if (ans2.equals("tak")) {
                     max = guess;
                 } else if (ans2.equals("nie")) {
-                    System.out.println("Za mało?");
+                    System.out.print("Za mało?");
                     String ans3 = scanner.nextLine();
                     if (ans3.equals("tak")) {
                         min = guess;
